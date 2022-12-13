@@ -31,7 +31,7 @@ variable "tags_all" {
 }
 
 variable "tags" {
-  type = string
+  type = map(string)
 }
 
 variable "AWSEBHealthCheck-name" {
