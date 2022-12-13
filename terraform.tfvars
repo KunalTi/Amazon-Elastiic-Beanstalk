@@ -4,7 +4,10 @@ tags_all        = "App by Terraform"
 
 solution_stack_name = "64bit Amazon Linux 2 v4.3.2 running Tomcat 8.5 Corretto 11"
 tier                = "Worker"
-tags                = "App by Terraform"
+tags                = {
+  Name  = "App by Terraform"
+  Owner = "Kunal"
+}
 
 InstanceProfileNamespace = "aws:autoscaling:launchconfiguration"
 InstanceProfileName      = "IamInstanceProfile"
